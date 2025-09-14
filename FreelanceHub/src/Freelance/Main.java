@@ -19,17 +19,17 @@ public class Main {
         JTextPane text = new JTextPane();
         text.setContentType("text/html");
         text.setText("<html><div style='text-align:center;font-family:Times New Roman;font-size:34'>"
-                + "FreelanceHub is a Java-based project built to explore how<br>"
+                + "<strong> FreelanceHub </strong> is a Java-based project built to explore how<br>"
                 + "projects can be organized and managed through software.<br>"
                 + "It focuses on basics of object-oriented programming concepts<br>"
                 + "along with database connectivity.<br><br>"
-                + "Though not a commercial product, FreelanceHub serves as a<br>"
+                + "Though not a commercial product, <strong>FreelanceHub</strong> serves as a<br>"
                 + "learning project that demonstrates how logic can be applied<br>"
                 + "to real-world scenarios."
                 + "</div></html>");
         text.setEditable(false);
         text.setBackground(Color.LIGHT_GRAY);
-        text.setAlignmentX(Component.CENTER_ALIGNMENT);
+        //text.setAlignmentX(Component.CENTER_ALIGNMENT);
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBackground(Color.LIGHT_GRAY);
