@@ -29,7 +29,6 @@ public class Main {
                 + "</div></html>");
         text.setEditable(false);
         text.setBackground(Color.LIGHT_GRAY);
-        //text.setAlignmentX(Component.CENTER_ALIGNMENT);
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBackground(Color.LIGHT_GRAY);
