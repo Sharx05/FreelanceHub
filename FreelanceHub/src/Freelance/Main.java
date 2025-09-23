@@ -1,6 +1,8 @@
 package Freelance;
 import java.util.*;
 import java.awt.*;
+import java.awt.event.* ;
+
 import javax.swing.*;
 
 
@@ -35,7 +37,21 @@ public class Main {
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBackground(Color.LIGHT_GRAY);
         JButton button=new JButton("Login !!");
+        button.addActionListener(new ActionListener() {
+        	public void actionPerformed (ActionEvent e)
+        	{ 
+        		Auth a=new Auth();
+        		a.login();
+        	}
+        });
         JButton button2=new JButton("Register!!");
+        button.addActionListener(new ActionListener() {
+        	public void actionPerformed (ActionEvent e)
+        	{ 
+        		Auth a=new Auth();
+        		a.register();
+        	}
+        });
         button.setBackground(Color.CYAN);   
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setMaximumSize(new Dimension(500, 50));
@@ -50,10 +66,8 @@ public class Main {
         panel.add(Box.createVerticalStrut(10));
         panel.add(button2);
         panel.add(text);
-        
-        
-
         JScrollPane scroll = new JScrollPane(panel);
+       
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
